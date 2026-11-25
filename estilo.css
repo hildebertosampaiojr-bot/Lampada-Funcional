@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  background: #202020;
+  color: #ffffff;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.acessa {
+  background: #fff3b0;
+  color: #202020;
+}
+
+.painel {
+  text-align: center;
+}
+
+.lampada {
+  font-size: 8rem;
+  line-height: 1;
+  filter: grayscale(1) brightness(0.45);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.lampada.acesa {
+  filter: none;
+  transform: scale(1.08);
+}
+
+#estado {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+button {
+  min-width: 120px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
